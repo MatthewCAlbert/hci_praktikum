@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Matthew Christopher Albert</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="parallax">
+        <div>
+            <p class="logo" align="center">The <span class="yellow">McLOG</span></p>
+            <p class="desc">Hi my name is Matthew Christopher Albert and this is my random blog.</p>
+        </div>
+    </header>
+    <nav class="card-2">
+        <div class="container nav-toggler" onclick="toggleNav(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+        <div class="logo-alt">
+            The <span class="yellow">McLOG</span>
+        </div>
+        <div class="directory">
+            <a href="javascript:void(0)" onclick="nav_href('index.html')" class="active">HOME</a>
+            <a href="javascript:void(0)" onclick="nav_href('category/index.html')">CATEGORY</a>
+            <a href="javascript:void(0)" onclick="nav_href('https://matthewcalbert.com/p/portfolio')">PORTFOLIO</a>
+            <a href="javascript:void(0)" onclick="nav_href('about/index.html')">ABOUT</a>
+        </div>
+        <div>
+            <input type="search" class="search" placeholder="Search.."/>
+            <span class="search-icon" onclick="toggleSearch()">&#8981;</span>
+        </div>
+    </nav>
+    <div class="modal black-back" modal-name="one">
+        <div class="m-box card-2">
+            <div style="padding: 30px 50px;">
+                <a href="javascript:void(0)" onclick="toggleModal('one')" class="close">x</a>
+                <h1 style="margin:0;font-family: bivoac;">NOTICE</h1>
+                <h2 style="margin:0;">Where is my JS?</h2>
+                <ul style="list-style-type: disc;margin: 10px 20px;font-size: .9em;">
+                    <li>Header with Parallax scrolling.</li>
+                    <li>Go to Top button.</li>
+                    <li>When you open this website using mobile version, a search bar will be toggleable.</li>
+                    <li>This animated Modal added and loaded using DOMContentLoaded event.</li>
+                    <li>Loading screen added to every page.</li>
+                    <li>When you click link at navbar/sidebar(only at mobile version) you'll get animation before leaving the page.</li>
+                </ul>
+                <div style="font-family: moonglade;position: absolute;bottom:0;left:0;padding: 30px 50px;">
+                    <a href="javascript:void(0)" onclick="toggleModal('one')" class="ul-link">I understand</a>
+                    <br><br>
+                    <small style="font-family: moonglade;">NOTE: this will always appear everytime you open home, due to cookie capability limited by not using a web server.</small>
+                    <br><br>
+                    <small style="font-family: bivoac;">THE MCLOG</small>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="loader black-back">
+        <div>
+            <img src="img/loading.gif" alt="loader"/>
+        </div>
+    </div>
+    <div class="search-bar card-2">
+        <input type="search" class="search" placeholder="Search.."/>
+    </div>
+    <div class="floating">
+        <a class="up-button" href="javascript:void(0)" onclick="goToTop()" tabindex="-1"></a>
+    </div>
+    <div class="sidebar">
+        <div class="directory">
+            <a href="javascript:void(0)" onclick="nav_href('index.html')" class="active">HOME</a>
+            <a href="javascript:void(0)" onclick="nav_href('category/index.html')">CATEGORY</a>
+            <a href="javascript:void(0)" onclick="nav_href('https://matthewcalbert.com/p/portfolio')">PORTFOLIO</a>
+            <a href="javascript:void(0)" onclick="nav_href('about/index.html')">ABOUT</a>
+        </div>
+    </div>
+    <div class="p-loader card-2">
+        <p>Loading <span></span></p>
+    </div>
+    <div class="body">
+        <div class="posts">
+            <div class="post">
+                <div class="category">
+                    <p>DEALS <a href="#"><span>Find more</span></a></p>
+                </div>
+                <div class="img-wrapper">
+                    <img src="img/posts/jbareham_180823_2895_0075.0.webp" alt="berita">
+                </div>
+                <div class="labels">
+                    <div>Deals</div>
+                    <div>Weekend Sale</div>
+                    <div>Audio</div>
+                    <div>Technology</div>
+                </div>
+                <div class="text">
+                    <p class="title">Sony’s WH-1000XM3 wireless headphones are nearly $100 off at Amazon</p>
+                    <p>By <span class="author">MCA</span> | <span class="date">March 23, 2020, 9:01 am UTC+7</span></p>
+                    <p class="article">
+                        It’s possible that noise-canceling headphones suddenly ended up on your wishlist due to the extended self-quarantine period many of us are experiencing around the world. If that’s the case for you, we’re finding good deals every day on some of our favorite models. Today’s deal is on the Sony WH-1000XM3, which are easily among the best headphones you can currently purchase. Instead of their usual $350 price, Amazon is selling them for 255$.
+                    </p>
+                    <div class="end">
+                        <span class="button-container">
+                            <a href="post/sony-wh1000xm3/index.html" class="btn btn-aes f-center"><div class="btn-back">Read more</div><div class="btn-front">Read more</div></a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="post">
+                <div class="category">
+                    <p>TECHNO <a href="#"><span>Find more</span></a></p>
+                </div>
+                <div class="img-wrapper">
+                    <img src="img/posts/Acer_Aspire_5_A515_44_44G_front_right_angle_view.0.webp" alt="berita">
+                </div>
+                <div class="labels">
+                    <div>Mobile</div>
+                    <div>Updates</div>
+                    <div>Laptop</div>
+                    <div>Technology</div>
+                    <div>AMD</div>
+                </div>
+                <div class="text">
+                    <p class="title">Acer’s upcoming laptops will include AMD Ryzen 4000 mobile processors</p>
+                    <p>By <span class="author">MCA</span> | <span class="date">March 23, 2020, 7:35 am UTC+7</span></p>
+                    <p class="article">
+                        Acer has announced that it will release a new version of its Aspire 5 laptop this year, powered by AMD’s Ryzen 5 4500U mobile chip. The company has also revealed the release date for its Ryzen-powered Swift 3.
+                        <br><br>
+                        With both lines, Acer aims to provide fairly slim products at an affordable price; reviewers often note that the devices look and feel more expensive than they are. The U-Series, which both laptops incorporate, is designed for ultraportable devices.
+                    </p>
+                    <div class="end">
+                        <span class="button-container">
+                            <a href="post/acer-ryzen-4000/index.html" class="btn btn-aes f-center"><div class="btn-back">Read more</div><div class="btn-front">Read more</div></a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="post">
+                <div class="category">
+                    <p>CULTURE <a href="#"><span>Find more</span></a></p>
+                </div>
+                <div class="img-wrapper">
+                    <img src="img/posts/2020_03_26_13.52.26.0.webp" alt="berita">
+                </div>
+                <div class="labels">
+                    <div>School</div>
+                    <div>Covid19</div>
+                    <div>Quarantine</div>
+                    <div>Technology</div>
+                    <div>Minecraft</div>
+                </div>
+                <div class="text">
+                    <p class="title">CAMPUS IS CLOSED, SO COLLEGE STUDENTS ARE REBUILDING THEIR SCHOOLS IN MINECRAFT</p>
+                    <p>By <span class="author">MCA</span> | <span class="date">March 21, 2020, 12:06 pm UTC+7</span></p>
+                    <p class="article">
+                        The day before University of Pennsylvania students were told that their college commencement would be held online, junior Andrew Guo thought of an alternative to holding the address over Zoom. Students could have a “Hey Day” and graduation inside Minecraft, just as a Japanese elementary school had organized days earlier.
+                    </p>
+                    <div class="end">
+                        <span class="button-container">
+                            <a href="post/campus-closed-students-rebuild-school-in-minecraft/index.html" class="btn btn-aes f-center"><div class="btn-back">Read more</div><div class="btn-front">Read more</div></a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div style="margin: 10px 0 5px 0;">
+                <a href="#" class="ul-link l-more">Load more</a>
+            </div>
+        </div>
+        <aside>
+            <div>
+                <p class="title">Categories</p>
+                <ul>
+                    <li><a href="#">News</a></li>
+                    <li><a href="#">Technology</a></li>
+                    <li><a href="#">Gaming</a></li>
+                    <li><a href="#">Culture</a></li>
+                    <li><a href="#">Deals</a></li>
+                    <li><a href="#">Photography</a></li>
+                </ul>
+            </div>
+            <div>
+                <p class="title">Archives</p>
+                <ul>
+                    <li><a href="#">March 2020</a></li>
+                    <li><a href="#">February 2020</a></li>
+                    <li><a href="#">January 2020</a></li>
+                    <li><a href="#">December 2019</a></li>
+                </ul>
+            </div>
+        </aside>
+    </div>
+    <footer>
+        <div class="footer-head">
+            <div class="title">
+                <p class="logo">The <span class="yellow">McLOG</span></p>
+                <p class="sub-title">THE BLOG OF MATTHEW C. A.</p>
+            </div>
+            <div class="social">
+                <a href="https://www.facebook.com/matthew.christopheralbert" target="_blank"><img src="img/svg/fb.webp" alt="fb"></a>
+                <a href="https://www.instagram.com/matthewcalbert/" target="_blank"><img src="img/svg/instagram.png" alt="instagram"></a>
+                <a href="https://www.linkedin.com/in/matthew-christopher-albert-21518a191/" target="_blank"><img src="img/svg/linkedin-2.png" alt="linkedin"></a>
+                <a href="http://steamcommunity.com/id/mcarchmage" target="_blank"><img src="img/svg/steam.png" alt="steam"></a>
+            </div>
+        </div>
+        <hr>
+        <div class="foot">
+            <div class="extra">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of use</a>
+                <a href="#">Contact</a>
+                <a href="#">About</a>
+            </div>
+            <div style="font-size: 9pt;color:rgba(255,255,255,.6);">Design by Matthew C. A.</div>
+            <div>@ 2020 Matthew Christopher Albert</div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function(){ 
+            toggle_loader(0);
+            toggleModal('one');
+        }, false);
+    </script>
+</body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Category - The McLOG</title>
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header class="parallax">
+        <div>
+            <p class="logo" align="center">The <span class="yellow">McLOG</span></p>
+            <p class="desc">Hi my name is Matthew Christopher Albert and this is my random blog.</p>
+        </div>
+    </header>
+    <nav class="card-2">
+        <div class="container nav-toggler" onclick="toggleNav(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+        <div class="logo-alt">
+            The <span class="yellow">McLOG</span>
+        </div>
+        <div class="directory">
+            <a href="javascript:void(0)" onclick="nav_href('../index.html')">HOME</a>
+            <a href="javascript:void(0)" onclick="nav_href('../category/index.html')" class="active">CATEGORY</a>
+            <a href="javascript:void(0)" onclick="nav_href('https://matthewcalbert.com/p/portfolio')">PORTFOLIO</a>
+            <a href="javascript:void(0)" onclick="nav_href('../about/index.html')">ABOUT</a>
+        </div>
+        <div>
+            <input type="search" class="search" placeholder="Search.."/>
+            <span class="search-icon" onclick="toggleSearch()">&#8981;</span>
+        </div>
+    </nav>
+    <div class="search-bar card-2">
+        <input type="search" class="search" placeholder="Search.."/>
+    </div>
+    <div class="floating">
+        <a class="up-button" href="javascript:void(0)" onclick="goToTop()" tabindex="-1"></a>
+    </div>
+    <div class="sidebar">
+        <div class="directory">
+            <a href="javascript:void(0)" onclick="nav_href('../index.html')">HOME</a>
+            <a href="javascript:void(0)" onclick="nav_href('../category/index.html')" class="active">CATEGORY</a>
+            <a href="javascript:void(0)" onclick="nav_href('https://matthewcalbert.com/p/portfolio')">PORTFOLIO</a>
+            <a href="javascript:void(0)" onclick="nav_href('../about/index.html')">ABOUT</a>
+        </div>
+    </div>
+    <div class="loader black-back">
+        <div>
+            <img src="../img/loading.gif" alt="loader"/>
+        </div>
+    </div>
+    <div class="p-loader card-2">
+        <p>Loading <span></span></p>
+    </div>
+    <div class="body">
+        <aside style="background-color: white;">
+            <div>
+                <p class="title">Categories</p>
+                <ul>
+                    <li><a href="#">News</a></li>
+                    <li><a href="#">Technology</a></li>
+                    <li><a href="#">Gaming</a></li>
+                    <li><a href="#">Culture</a></li>
+                    <li><a href="#">Deals</a></li>
+                    <li><a href="#">Photography</a></li>
+                </ul>
+            </div>
+            <div>
+                <p class="title">Archives</p>
+                <ul>
+                    <li><a href="#">March 2020</a></li>
+                    <li><a href="#">February 2020</a></li>
+                    <li><a href="#">January 2020</a></li>
+                    <li><a href="#">December 2019</a></li>
+                </ul>
+            </div>
+        </aside>
+    </div>
+    <footer>
+        <div class="footer-head">
+            <div class="title">
+                <p class="logo">The <span class="yellow">McLOG</span></p>
+                <p class="sub-title">THE BLOG OF MATTHEW C. A.</p>
+            </div>
+            <div class="social">
+                <a href="https://www.facebook.com/matthew.christopheralbert" target="_blank"><img src="../img/svg/fb.webp" alt="fb"></a>
+                <a href="https://www.instagram.com/matthewcalbert/" target="_blank"><img src="../img/svg/instagram.png" alt="instagram"></a>
+                <a href="https://www.linkedin.com/in/matthew-christopher-albert-21518a191/" target="_blank"><img src="../img/svg/linkedin-2.png" alt="linkedin"></a>
+                <a href="http://steamcommunity.com/id/mcarchmage" target="_blank"><img src="../img/svg/steam.png" alt="steam"></a>
+            </div>
+        </div>
+        <hr>
+        <div class="foot">
+            <div class="extra">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of use</a>
+                <a href="#">Contact</a>
+                <a href="#">About</a>
+            </div>
+            <div style="font-size: 9pt;color:rgba(255,255,255,.6);">Design by Matthew C. A.</div>
+            <div>@ 2020 Matthew Christopher Albert</div>
+        </div>
+    </footer>
+    <script src="../script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function(){ 
+            toggle_loader(0);
+        }, false);
+    </script>
+</body>
+</html>
